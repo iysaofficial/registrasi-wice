@@ -142,6 +142,7 @@ a {
   color: #ffffff;
   background: linear-gradient(to right, #ffc107 50%, #343a40 100%);
   box-shadow: 0 4px 15px 0 rgba(245,245,245);
+  border: #000 1px solid;
 }
 
 .btn--accent {
@@ -152,6 +153,7 @@ a {
   color: #ffffff;
   background: linear-gradient(to right, #ffc107 50%, #343a40 100%);
   box-shadow: 0 4px 15px 0 rgba(245,245,245);
+  border: #000 1px solid;
 }
 
 @media screen and (max-width: 426px) {
