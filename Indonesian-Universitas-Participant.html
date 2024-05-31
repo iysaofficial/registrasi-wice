@@ -41,9 +41,8 @@
         <p>1.&nbsp; &nbsp; Mohon mengisi data yang diperlukan dengan benar dan memastikan tidak ada kesalahan penulisan. Pastikan juga bahwa data yang dikirim sudah final dan tidak mengalami perubahan.</p>
         <p>2.&nbsp; &nbsp;Setelah memastikan data sudah benar, Anda dapat mengklik tombol "Kirim". Jika kami telah menerima data Anda, akan ada notifikasi berwarna hijau di sebelah tombol "Kirim". </p>
         <img class="con" src="../../1.PNG" alt="">
-        <p>3.&nbsp; &nbsp;Notifikasi:
-          Data telah berhasil terkirim data registrasi akan dikirimkan ke alamat email ketua tim,  dan berkas akan divalidasi oleh tim kami. 
-Mohon bersabar dan tunggu hingga 3 hari setelah waktu pendaftaran. Surat Penerimaan (LOA) akan kami kirimkan ke alamat email ketua tim. </p>
+        <p>3.&nbsp; &nbsp;Notifikasi: Data telah berhasil terkirim data registrasi akan dikirimkan ke alamat email ketua tim,  dan berkas akan divalidasi oleh tim kami. 
+            Mohon bersabar dan tunggu hingga 3 hari setelah waktu pendaftaran. Surat Penerimaan (LOA) akan kami kirimkan ke alamat email ketua tim. </p>
         <form name="#">
           
           <div class="user-details">
@@ -119,25 +118,25 @@ Mohon bersabar dan tunggu hingga 3 hari setelah waktu pendaftaran. Surat Penerim
             </div>
 
             <div class="input-box">
-              <label for="NAMA_SEKOLAH" class="form-label"
-                >Nama Sekolah/Universitas</label
+              <label for="NAMA_UNIVERSITAS" class="form-label"
+                >Universitas</label
               >
-              <p>Noted : Masukan nama sekolah dengan format sesuai urutan nama ketua dan anggota tim asal sekolah masing - masing, dengan format seperti berikut :</p>
+              <p>Noted : Masukan nama universitas dengan format sesuai urutan nama ketua dan anggota tim asal universitas masing - masing, dengan format seperti berikut :</p>
               <h6>SMA CERIA</h6>
               <h6>SMA BAHAGIA</h6>
               <h6>SMA TADIKA MESRA</h6>
               <textarea
                 type="text"
-                id="NAMA_SEKOLAH"
-                name="NAMA_SEKOLAH"
+                id="NAMA_UNIVERSITAS"
+                name="NAMA_UNIVERSITAS"
                 class="form-control"
-                placeholder="Masukan Nama Sekolah/Universitas Anda"
+                placeholder="Masukan Nama Universitas Anda"
                 required
               ></textarea>
             </div>
 
             <div class="input-box">
-              <label for="NISN_NIM" class="form-label"
+              <label for="NIM" class="form-label"
                 >NISN Leader & Member Tim
               </label>
               <p>Noted : Masukan NISN dengan sesuai urutan nama ketua dan anggota tim, dengan format seperti berikut :</p>
@@ -146,8 +145,8 @@ Mohon bersabar dan tunggu hingga 3 hari setelah waktu pendaftaran. Surat Penerim
               <h6>251700</h6>
               <textarea
                 type="text"
-                id="NISN_NIM"
-                name="NISN_NIM"
+                id="NIM"
+                name="NIM"
                 class="form-control"
                 placeholder="Masukan NISN Ketua & Anggota Tim"
                 required
@@ -182,15 +181,15 @@ Mohon bersabar dan tunggu hingga 3 hari setelah waktu pendaftaran. Surat Penerim
                 placeholder="Choose Grade"
                 required
               >
-                <option value="">--Pilih Jenjang Pendidikan Anda--</option>
-                <option value="Sekolah Dasar">Sekolah Dasar</option>
+                <option value="Universitas">Universitas</option>
+                <!-- <option value="Sekolah Dasar">Sekolah Dasar</option>
                 <option value="Sekolah Menengah Pertama">
                   Sekolah Menengah Pertama
                 </option>
                 <option value="Sekolah Menengah Atas">
                   Sekolah Menengah Atas
-                </option>
-                <!-- <option value="Universitas">Universitas</option> -->
+                </option> -->
+                    <!-- <option value="Universitas">Universitas</option> -->
               </select>
             </div>
 
@@ -504,7 +503,7 @@ Mohon bersabar dan tunggu hingga 3 hari setelah waktu pendaftaran. Surat Penerim
 
     <script>
     const scriptURL =
-      'https://script.google.com/macros/s/AKfycbzu453uhTUtEseA89bygvJ7wLKklLzbfMTzJRLczpKTkzKVyyTsNlNqLVnZIcGYWApKhw/exec';
+      'https://script.google.com/macros/s/AKfycbwpFwwwCsI5Qp4LkGAYbPvJyjitNUGMW76yt_eO1q4TUHaNONL3XC9OYyZ5QyLYeuUq_g/exec';
     const form = document.forms['#'];
     
     form.addEventListener('submit', (e) => {
