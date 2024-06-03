@@ -218,7 +218,7 @@ a {
     border: 1px solid #ffffff;
     width: 320px;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 5px;
     background: linear-gradient(to right, #ffc107 50%, #343a40 100%);
   }
