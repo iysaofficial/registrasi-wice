@@ -97,13 +97,14 @@
               <h6>Kamal Putra</h6>
               <h6>Ranu Ramadhan</h6>
               <h6>Irsyad Zaidan</h6>
+              <p>Noted: Maximum 5 Members + 1 Team Leader</p>
               <textarea
                 type="text"
                 id="NAMA_LENGKAP"
                 name="NAMA_LENGKAP"
                 class="form-control"
                 placeholder="Input Name of Leader & Member Team"
-                required maxlength="180"
+                required maxlength="200"
                 required
               ></textarea>
               <p class="barrier" id="Limit"></p>
@@ -497,7 +498,7 @@
   var NAMA_LENGKAP = document.getElementById
   ('NAMA_LENGKAP');
   var Limit = document.getElementById("Limit");
-  var limit = 180;
+  var limit = 200;
   Limit.textContent = 0 + "/" + limit;
 
   NAMA_LENGKAP.addEventListener("input", function  () {
