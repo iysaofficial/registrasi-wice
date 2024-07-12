@@ -103,8 +103,10 @@
                 name="NAMA_LENGKAP"
                 class="form-control"
                 placeholder="Input Name of Leader & Member Team"
+                required maxlength="180"
                 required
               ></textarea>
+              <p class="barrier" id="Limit"></p>
             </div>
 
             <div class="input-box">
@@ -349,8 +351,10 @@
                 name="PROJECT_TITLE"
                 class="form-control"
                 placeholder="Input Your Project Title"
+                required maxlength="160"
                 required
               ></textarea>
+              <p class="barrier" id="Limit2"></p>
             </div>
 
             
@@ -487,6 +491,57 @@
     //   emailjs
     //     .send('service_2rxj19o', 'template_55jakrl', parms)
     // }</script>
+
+
+<script>
+  var NAMA_LENGKAP = document.getElementById
+  ('NAMA_LENGKAP');
+  var Limit = document.getElementById("Limit");
+  var limit = 180;
+  Limit.textContent = 0 + "/" + limit;
+
+  NAMA_LENGKAP.addEventListener("input", function  () {
+    var textLength = NAMA_LENGKAP.value.length;
+    Limit.textContent = textLength + "/" + limit;
+
+      if(textLength > limit) {
+        NAMA_LENGKAP.style.borderColor = "#ff2851";
+        Limit.style.color = "#ff2851";
+      } else {
+        NAMA_LENGKAP.style.borderColor = "#31821b";
+        Limit.style.color = "#31821b";
+      }if (textLength > limit) {
+        alert("Exceeding the letter limit");
+      }
+  })
+
+</script>
+<script>
+  var PROJECT_TITLE = document.getElementById
+  ('PROJECT_TITLE');
+  var Limit2 = document.getElementById("Limit2");
+  var limit2 = 160;
+  Limit2.textContent = 0 + "/" + limit2;  
+
+  PROJECT_TITLE.addEventListener("input", function  () {
+    var textLength = PROJECT_TITLE.value.length;
+    Limit2.textContent = textLength + "/" + limit2;
+
+      if(textLength > limit2) {
+        PROJECT_TITLE.style.borderColor = "#ff2851";
+        Limit2.style.color = "#ff2851";
+      } else {
+        PROJECT_TITLE.style.borderColor = "#31821b";
+        Limit2.style.color = "#31821b";
+
+
+      }if (textLength > limit2) {
+        alert("#form_alerts");
+        remove("d-none");
+      }
+  })
+
+</script>
 
     <script>
     const scriptURL =

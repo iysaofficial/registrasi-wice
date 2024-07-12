@@ -163,6 +163,14 @@ form .button input:hover {
   background: linear-gradient(-135deg, #343a40, #ffc107);
 }
 
+.barrier {
+  width: 100%;
+  text-align: right;
+  margin-top: -20px;
+  padding-right: 10px;
+  color: #737373;
+}
+
 @media (max-width: 584px) {
   .container {
     margin-top: 200px;
