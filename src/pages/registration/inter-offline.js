@@ -49,6 +49,8 @@ export default function InternationalOffline() {
         break;
       case "World Invention Competition and Exhibition - Offline Competition + Full Package":
         break;
+      case "World Invention Competition and Exhibition - Offline Competition + Excursion":
+        break;
       default:
         setCategoryPrice("");
         break;
@@ -249,6 +251,9 @@ export default function InternationalOffline() {
                     </option>
                     <option value="World Invention Competition and Exhibition - Offline Competition + Full Package">
                       Offline Competition + Full Package
+                    </option>
+                    <option value="World Invention Competition and Exhibition - Offline Competition + Excursion">
+                      Offline Competition + Excursion
                     </option>
                   </select>
                 </div>

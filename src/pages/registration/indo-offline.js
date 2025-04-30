@@ -46,6 +46,10 @@ function IndonesiaOffline() {
     switch (value) {
       case "World Invention Competition and Exhibition - Offline Competition":
         break;
+      case "World Invention Competition and Exhibition - Offline Competition + Excursion":
+        break;
+      case "World Invention Competition and Exhibition - Offline Competition + FullPack":
+        break;
       default:
         break;
     }
@@ -234,6 +238,12 @@ function IndonesiaOffline() {
                     <option value="">--Pilih Kategori Kompetisi--</option>
                     <option value="World Invention Competition and Exhibition - Offline Competition">
                       Offline Competition
+                    </option>
+                    <option value="World Invention Competition and Exhibition - Offline Competition + Excursion">
+                      Offline Competition + Excursion
+                    </option>
+                    <option value="World Invention Competition and Exhibition - Offline Competition + Fullpack">
+                      Offline Competition + Fullpack
                     </option>
                   </select>
                 </div>
