@@ -274,7 +274,7 @@ function IndonesiaOnline() {
                   </p>
                 </div>
                 <div className="input-box">
-                  <label for="LEADER_WHATSAPP" class="form-label">
+                  <label for="LEADER_WHATSAPP" className="form-label">
                     Leader WhatsApp Number
                     <p>
                       Please write with phone code, example : (phone code) (your

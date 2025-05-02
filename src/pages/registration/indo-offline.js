@@ -218,7 +218,7 @@ function IndonesiaOffline() {
                     name="CATEGORY_PARTICIPANT"
                     className="form-control"
                     placeholder="Choose Categories Participant"
-                    value="PESERTA INDONESIA"
+                    value="INDONESIA PARTICIPANT"
                     readOnly
                   />
                 </div>
@@ -280,7 +280,7 @@ function IndonesiaOffline() {
                   </p>
                 </div>
                 <div className="input-box">
-                  <label for="LEADER_WHATSAPP" class="form-label">
+                  <label for="LEADER_WHATSAPP" className="form-label">
                     Leader WhatsApp Number
                     <p>
                       Please write with phone code, example : (phone code) (your

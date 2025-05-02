@@ -1,6 +1,8 @@
-import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../../lib/data/terms";
+import {
+  indonesiaOnlineTerms,
+  indonesiaOfflineTerms,
+} from "../../lib/data/terms";
 import { useState, useEffect } from "react";
-
 
 function HomeIndo() {
   const [showModal, setShowModal] = useState(false);
@@ -23,7 +25,7 @@ function HomeIndo() {
       alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
     }
   };
-  
+
   useEffect(() => {
     const hasAcceptedTerms = sessionStorage.getItem("termsAccepted");
     if (hasAcceptedTerms === "true") {
@@ -38,25 +40,35 @@ function HomeIndo() {
           <div className="wrapper">
             <div className="text-center">
               <h1 className="mx-auto text-sm md:text-lg lg:text-5xl">
-                FORMULIR REGISTRASI
+                REGISTRATION FORM FOR INDONESIA PARTICIPANTS
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Pilih Kategori Kompetisi untuk Registrasi WICE 2025
+                Choose Categories Competition for Registration WICE 2025
               </h3>
             </div>
           </div>
           <div className="link-web mx-auto text-center">
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/registration/indo-online", indonesiaOnlineTerms)}
+              onClick={() =>
+                handleOpenModal(
+                  "/registration/indo-online",
+                  indonesiaOnlineTerms
+                )
+              }
             >
-              Kompetisi Online{" "}<i className="fa-solid fa-earth-americas"></i>
+              Online Competition<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               className="btn btn-action text-center me-lg-5 "
-              onClick={() => handleOpenModal("/registration/indo-offline", indonesiaOfflineTerms)}
+              onClick={() =>
+                handleOpenModal(
+                  "/registration/indo-offline",
+                  indonesiaOfflineTerms
+                )
+              }
             >
-              Kompetisi Offline{" "}<i className="fa-solid fa-earth-americas"></i>
+              Offline Competition<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
@@ -66,7 +78,7 @@ function HomeIndo() {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h2 className="text-4xl">Syarat & Ketentuan</h2>
+            <h2 className="text-4xl">Terms & Conditions</h2>
             <div>{termsContent}</div> {/* Isi dinamis */}
             <div className="checkbox mt-2">
               <input
@@ -75,17 +87,17 @@ function HomeIndo() {
                 checked={termsAccepted}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
-              <label htmlFor="terms"> Saya menyetujui Syarat & Ketentuan di atas</label>
+              <label htmlFor="terms"> I agree to the Terms & Conditions</label>
             </div>
             <div className="modal-actions">
               <button
                 className="btn btn-secondary"
                 onClick={() => setShowModal(false)}
               >
-                Kembali
+                Cancel
               </button>
               <button className="btn btn-primary" onClick={handleAccept}>
-                Terima & Proses
+                Accept & Proceed
               </button>
             </div>
           </div>
