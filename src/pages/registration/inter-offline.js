@@ -62,7 +62,7 @@ export default function InternationalOffline() {
 
     if (!termsAccepted) {
       alert("You must agree to the Terms & Conditions first.");
-      router("/registration/homeinter"); // Navigasi ke halaman HomeIndo
+      router.push("/registration/homeinter"); // Navigasi ke halaman HomeIndo
     }
   }, [router]);
 
@@ -456,13 +456,12 @@ export default function InternationalOffline() {
                     placeholder="Choose Grade"
                     required
                   >
-                    <option value="">--Choose Your Grade--</option>
-                    <option value="Elementery">Elementery</option>
-                    <option value="Junior High School">
-                      Junior High School
+                    <option value="">--Choose Grade--</option>
+                    <option value="Elementary">
+                      Elementary
                     </option>
-                    <option value="Senior High School">
-                      Senior High School
+                    <option value="Secondary">
+                      Secondary
                     </option>
                     <option value="University">University</option>
                   </select>
@@ -671,13 +670,13 @@ export default function InternationalOffline() {
                     <option value="">
                       --Select the Source of Information--
                     </option>
+                    <option value="WICE Website">WICE Website</option>
                     <option value="IYSA Instagram">IYSA Instagram</option>
                     <option value="WICE Instagram">WICE Instagram</option>
                     <option value="Supervisor/School">Supervisor/School</option>
                     <option value="IYSA Facebook">IYSA Facebook</option>
                     <option value="IYSA Linkedin">IYSA Linkedin</option>
                     <option value="IYSA Website">IYSA Website</option>
-                    <option value="WICE Website">WICE Website</option>
                     <option value="IYSA Email">IYSA Email</option>
                     <option value="WICE Email">WICE Email</option>
                     <option value="Previous Event">Previous Event</option>

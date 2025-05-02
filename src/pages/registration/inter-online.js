@@ -64,7 +64,7 @@ export default function InternationalOnline() {
 
     if (!termsAccepted) {
       alert("You must agree to the Terms & Conditions first.");
-      router("/registration/homeinter"); // Navigasi ke halaman HomeIndo
+      router.push("/registration/homeinter"); // Navigasi ke halaman HomeIndo
     }
   }, [router]);
 
@@ -220,19 +220,15 @@ export default function InternationalOnline() {
                   <label for="CATEGORY_PARTICIPANT" class="form-label">
                     Categories Participant
                   </label>
-                  <select
+                  <input
                     type="text"
                     id="CATEGORY_PARTICIPANT"
                     name="CATEGORY_PARTICIPANT"
                     class="form-control"
                     placeholder="Choose Categories Participant"
-                    value=""
-                    required
-                  >
-                    <option value="International Participant">
-                      International Participant
-                    </option>
-                  </select>
+                    value="International Participant"
+                    readOnly
+                  ></input>
                 </div>
                 <div class="input-box">
                   <label for="CATEGORY_COMPETITION" class="form-label">
@@ -460,14 +456,9 @@ export default function InternationalOnline() {
                     placeholder="Choose Grade"
                     required
                   >
-                    <option value="">--Choose Your Grade--</option>
-                    <option value="Elementery">Elementery</option>
-                    <option value="Junior High School">
-                      Junior High School
-                    </option>
-                    <option value="Senior High School">
-                      Senior High School
-                    </option>
+                    <option value="">--Choose Grade--</option>
+                    <option value="Elementary">Elementary</option>
+                    <option value="Secondary">Secondary</option>
                     <option value="University">University</option>
                   </select>
                 </div>
@@ -552,6 +543,10 @@ export default function InternationalOnline() {
                 <div class="input-box">
                   <label for="PROJECT_TITLE" class="form-label">
                     Project Title
+                    <p>
+                      Notes: Please fill in the title data CORRECTLY, the data
+                      entered cannot be changed!
+                    </p>
                   </label>
                   <textarea
                     type="text"
@@ -630,7 +625,7 @@ export default function InternationalOnline() {
                 {/* Kolom Harga */}
                 <div className="input-box invisible">
                   <label htmlFor="CATEGORY_PRICE" className="form-label ">
-                    Harga Pendaftaran
+                    Registration Price
                   </label>
                   <input
                     type="text"
@@ -690,6 +685,7 @@ export default function InternationalOnline() {
                     <option value="">
                       --Select the Source of Information--
                     </option>
+                    <option value="WICE Email">WICE Email</option>
                     <option value="IYSA Instagram">IYSA Instagram</option>
                     <option value="WICE Instagram">WICE Instagram</option>
                     <option value="Supervisor/School">Supervisor/School</option>
@@ -698,7 +694,6 @@ export default function InternationalOnline() {
                     <option value="IYSA Website">IYSA Website</option>
                     <option value="WICE Website">WICE Website</option>
                     <option value="IYSA Email">IYSA Email</option>
-                    <option value="WICE Email">WICE Email</option>
                     <option value="Previous Event">Previous Event</option>
                     <option value="Others">Others</option>
                   </select>
