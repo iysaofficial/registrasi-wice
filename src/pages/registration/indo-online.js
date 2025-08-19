@@ -62,7 +62,7 @@ function IndonesiaOnline() {
   }, [router]);
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbyvMPRRVvg5EpYxBSHos6D7HCjnmhc8gkitrMTyoEbsKp1SFF4h6IdaGB6RhF8hUidX/exec";
+    "";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -688,7 +688,7 @@ function IndonesiaOnline() {
               {/* GENERAL INFORMATION END */}
 
               <div className="button">
-                <input type="submit" value="SUBMIT FORM" />
+                <input type="submit" value="CLOSE REGISTRATIONs" />
               </div>
             </form>
 

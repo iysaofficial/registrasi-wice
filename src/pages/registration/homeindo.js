@@ -9,7 +9,6 @@ function HomeIndo() {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [redirectLink, setRedirectLink] = useState("");
   const [termsContent, setTermsContent] = useState("");
-
   const handleOpenModal = (link, terms) => {
     setRedirectLink(link); // Set link tujuan redirect
     setTermsContent(terms); // Set isi terms sesuai pilihan
@@ -22,7 +21,7 @@ function HomeIndo() {
       setShowModal(false);
       window.location.href = redirectLink;
     } else {
-      alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
+      alert("Please agree to the Terms & Conditions to proceed.");
     }
   };
 
@@ -52,23 +51,23 @@ function HomeIndo() {
               className="btn btn-action text-center me-lg-5 "
               onClick={() =>
                 handleOpenModal(
-                  "/registration/indo-online",
+                  "/",
                   indonesiaOnlineTerms
                 )
               }
             >
-              Online Competition<i className="fa-solid fa-earth-americas"></i>
+              Close Registration<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               className="btn btn-action text-center me-lg-5 "
               onClick={() =>
                 handleOpenModal(
-                  "/registration/indo-offline",
+                  "/",
                   indonesiaOfflineTerms
                 )
               }
             >
-              Offline Competition<i className="fa-solid fa-earth-americas"></i>
+              Close Registration<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
