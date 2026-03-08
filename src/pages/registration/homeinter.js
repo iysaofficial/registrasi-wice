@@ -40,7 +40,7 @@ function HomeInter() {
                 REGISTRATION FORM FOR INTERNATIONAL PARTICIPANTS
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
-                Choose Categories Competition for Registration WICE 2025
+                Choose Categories Competition for Registration WICE 2026
               </h3>
             </div>
           </div>
@@ -48,19 +48,18 @@ function HomeInter() {
             <a
               className="btn btn-action text-center me-lg-5"
               onClick={() =>
-                handleOpenModal("/", internationalOnlineTerms)
+                handleOpenModal("/registration/inter-online", internationalOnlineTerms)
               }
             >
-              Close Registration{" "}<i className="fa-solid fa-earth-americas"></i>
+              Online Participant<i className="fa-solid fa-earth-americas"></i>
             </a>
             <a
               className="btn btn-action text-center me-lg-5"
               onClick={() =>
-                handleOpenModal("/", internationalOfflineTerms)
+                handleOpenModal("/registration/inter-offline", internationalOfflineTerms)
               }
             >
-              Close Registration{" "}
-              <i className="fa-solid fa-earth-americas"></i>
+              Offline Participant<i className="fa-solid fa-earth-americas"></i>
             </a>
           </div>
         </div>
