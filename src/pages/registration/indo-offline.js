@@ -159,7 +159,7 @@ function IndonesiaOffline() {
               2. After ensuring the data is correct, you can click the <span className="fw-bold"> &quot;SUBMIT&quot;</span> button only once. If the data has been successfully submitted, you will be redirected to another page.
             </p>
             <p>
-              3. A will be an email informing you that your registration has been accepted which will be sent to the team leader's email address, and the documents will be validated by our team. Please be patient and wait for a maximum of 3 days after the registration deadline, and the Letter of Acceptance (LOA) will be sent to the team leader's email address.
+              3. A will be an email informing you that your registration has been accepted which will be sent to the team leader&apos;s email address, and the documents will be validated by our team. Please be patient and wait for a maximum of 3 days after the registration deadline, and the Letter of Acceptance (LOA) will be sent to the team leader&apos;s email address.
             </p>
             <br />
             {showModal && (
@@ -244,7 +244,7 @@ function IndonesiaOffline() {
                   </label>
                   <label>
                     <p>
-                      Input the name of the leader and team members with the team leader's name first, in the following format :
+                      Input the name of the leader and team members with the team leader&apos;s name first, in the following format :
                     </p>
                     <p>Notes : maximum 5 members + 1 team leader</p>
                     <h6>Kamal Putra Simatupang</h6>
@@ -274,7 +274,7 @@ function IndonesiaOffline() {
                       Please write with phone code, example : (country code) (phone number) +62 81770914xxxx
                     </p>
                     <p>
-                      Notes : Please make sure to fill in the team leader's number correctly, to be included in the group
+                      Notes : Please make sure to fill in the team leader&apos;s number correctly, to be included in the group
                     </p>
                   </label>
                   <input

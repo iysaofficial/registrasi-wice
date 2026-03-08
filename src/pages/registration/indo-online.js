@@ -158,7 +158,7 @@ function IndonesiaOnline() {
               2. After ensuring the data is correct, you can click the <span className="fw-bold"> &quot;SUBMIT&quot;</span> button only once. If the data has been successfully sent, you will be redirected to another page.
             </p>
             <p>
-              3. There will be an email information that the registration has been received which is sent to the team leader's email address, and the files will be validated by our team. Please be patient and wait a maximum of 3 days after the registration time, the Letter of Acceptance (LOA) will be sent to the team leader's email address.
+              3. There will be an email information that the registration has been received which is sent to the team leader&apos;s email address, and the files will be validated by our team. Please be patient and wait a maximum of 3 days after the registration time, the Letter of Acceptance (LOA) will be sent to the team leader&apos;s email address.
             </p>
             <br />
 
@@ -238,7 +238,7 @@ function IndonesiaOnline() {
                   </label>
                   <label>
                     <p>
-                      Input the name of the leader and team members with the team leader's name first, in the following format :
+                      Input the name of the leader and team members with the team leader&apos;s name first, in the following format :
                     </p>
                     <p>Note : maximum 5 members + 1 team leader</p>
                     <h6>Kamal Putra Simatupang</h6>
@@ -268,7 +268,7 @@ function IndonesiaOnline() {
                       Please write with the phone code, example: (country code) (phone number) +62 81770914xxxx
                     </p>
                     <p>
-                      Note: Please fill in the team leader's number correctly, to be entered into the WhatsApp group
+                      Note: Please fill in the team leader&apos;s number correctly, to be entered into the WhatsApp group
                     </p>
                   </label>
                   <input
