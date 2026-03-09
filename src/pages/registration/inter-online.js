@@ -71,7 +71,7 @@ export default function InternationalOnline() {
     }
   }, [router]);
 
-  const scriptURL = "";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzxTWOD0n4XvxWCmb6RBP13Y6B0Uk5JWM98PqGvw8rWj5Jej_qwu6Ne8vC_ynp_W26Z/exec";
 
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all?fields=name,idd")
