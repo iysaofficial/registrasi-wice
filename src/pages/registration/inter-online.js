@@ -679,7 +679,7 @@ export default function InternationalOnline() {
                 </div>
               </div>
               <div className="button">
-                <input type="submit" value="submit" />
+              <input type="submit" value="SUBMIT FORM" />
               </div>
             </form>
 

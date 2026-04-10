@@ -649,7 +649,7 @@ function IndonesiaOffline() {
               {/* GENERAL INFORMATION END */}
 
               <div className="button">
-                <input type="submit" value="Submit" />
+                <input type="submit" value="SUBMIT FORM" />
               </div>
             </form>
             {/* Loader dan Status Message */}

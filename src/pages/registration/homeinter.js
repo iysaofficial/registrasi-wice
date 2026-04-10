@@ -4,13 +4,21 @@ import { useState, useEffect } from "react";
 function HomeInter() {
   const [showModal, setShowModal] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false);
+  const [hasViewedTerms, setHasViewedTerms] = useState(false);
   const [redirectLink, setRedirectLink] = useState("");
   const [termsContent, setTermsContent] = useState("");
 
   const handleOpenModal = (link, terms) => {
-    setRedirectLink(link); // Set link tujuan redirect
-    setTermsContent(terms); // Set isi terms sesuai pilihan
-    setShowModal(true); // Tampilkan modal
+    setRedirectLink(link);
+    setTermsContent(terms);
+    setTermsAccepted(false);
+    setHasViewedTerms(false);
+    setShowModal(true);
+  };
+
+  const handleViewTerms = () => {
+    window.open("https://drive.google.com/file/d/1KOtyI8EZO42INO4Q_IeiTmBQCc_8JtTl/view?usp=sharing", "_blank");
+    setHasViewedTerms(true);
   };
 
   const handleAccept = () => {
@@ -71,14 +79,25 @@ function HomeInter() {
           <div className="modal-content">
             <h2 className="text-4xl">Terms & Conditions</h2>
             <div>{termsContent}</div> {/* Isi dinamis */}
-            <div className="checkbox">
+            <div className="checkbox mt-2">
               <input
                 type="checkbox"
                 id="terms"
                 checked={termsAccepted}
+                disabled={!hasViewedTerms}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
-              <label htmlFor="terms"> I agree to the Terms & Conditions</label>
+              <label htmlFor="terms" style={{ color: !hasViewedTerms ? "#999" : "inherit" }}>
+                I have read and agree to the{" "}
+                <a href="#" style={{ color: "#2563eb" }} onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
+                  Terms & Conditions
+                </a>.
+              </label>
+              {!hasViewedTerms && (
+                <p style={{ color: "#e74c3c", fontSize: "0.85rem", marginTop: "4px" }}>
+                  * Please read and agree to the Terms & Conditions first.
+                </p>
+              )}
             </div>
             <div className="modal-actions">
               <button
