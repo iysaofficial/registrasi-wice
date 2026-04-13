@@ -6,14 +6,21 @@ export const indonesiaOnlineTerms = (
     </h5>
     <ul>
       <li>
-        Participants who do not submit the required documents (extended
-        abstract, PowerPoint) after two reminders will be considered to have
-        withdrawn automatically.
+        Please be advised that all data submitted by participants cannot be
+        modified after the payment deadline has passed. In this regard
+        participants are required to carefully review their Letter of Acceptance
+        (LoA) and registration information upon submission to ensure the
+        accuracy, completeness, and correctness of all details provided.
       </li>
       <li>
-        Participants must use a title and extended abstract that match the
-        selected category. (International participants must use English for all
-        required documents.)
+        Participants who do not submit the required documents (full paper,
+        PowerPoint) after two reminders will be considered to have withdrawn
+        automatically.
+      </li>
+      <li>
+        Participants must use a title and full paper that match the selected
+        category. (International participants must use English for all required
+        documents.)
       </li>
       <li>
         The committee’s decision on this matter is final and cannot be
@@ -40,19 +47,26 @@ export const indonesiaOfflineTerms = (
     </h5>
     <ul>
       <li>
-        Participants who do not submit the required documents (extended
-        abstract, poster) after two reminders will be considered to have
-        withdrawn automatically.
+        Please be advised that all data submitted by participants cannot be
+        modified after the payment deadline has passed. In this regard
+        participants are required to carefully review their Letter of Acceptance
+        (LoA) and registration information upon submission to ensure the
+        accuracy, completeness, and correctness of all details provided.
       </li>
       <li>
-        Participants must use a title and extended abstract that match the
-        selected category. (International participants must use English for all
+        Participants who do not submit the required documents (full paper,
+        poster) after two reminders will be considered to have withdrawn
+        automatically.
+      </li>
+      <li>
+        Participants must use a title and full paper that match the selected
+        category. (International participants must use English for all
         requirements.)
       </li>
       <li>
         Participants are required to create a poster in A0 size, bring their
-        product, and also provide a paper/extended abstract (in hard copy)
-        during the judging session.
+        product, and also provide a paper/full paper (in hard copy) during the
+        judging session.
       </li>
       <li>
         Awards will be presented to participants according to the sequence set
@@ -90,14 +104,21 @@ export const internationalOnlineTerms = (
   <>
     <h3 className="text-2xl">Online Participants:</h3>
     <li>
-      Participants who do not submit the required documents (extended abstract,
+      Please be advised that all data submitted by participants cannot be
+      modified after the payment deadline has passed. In this regard
+      participants are required to carefully review their Letter of Acceptance
+      (LoA) and registration information upon submission to ensure the accuracy,
+      completeness, and correctness of all details provided.
+    </li>
+    <li>
+      Participants who do not submit the required documents (full paper,
       PowerPoint) after two reminders will be considered to have resigned
       automatically.
     </li>
     <li>
-      Participants must use the title and extended abstract in accordance with
-      the category they are participating in. (International participants must
-      use English for all required documents)
+      Participants must use the title and full paper in accordance with the
+      category they are participating in. (International participants must use
+      English for all required documents)
     </li>
     <li>
       The committee&apos;s decision regarding this matter is final and cannot be
@@ -110,18 +131,24 @@ export const internationalOfflineTerms = (
   <>
     <h3 className="text-2xl">Offline Participants:</h3>
     <li>
-      Participants who do not submit the required files (extended abstract,
-      poster) after two reminders will be considered automatically resigned.
+      Please be advised that all data submitted by participants cannot be
+      modified after the payment deadline has passed. In this regard
+      participants are required to carefully review their Letter of Acceptance
+      (LoA) and registration information upon submission to ensure the accuracy,
+      completeness, and correctness of all details provided.
     </li>
     <li>
-      Participants must use titles and extended abstracts that are in accordance
-      with the category they are participating in. (International participants
-      must use English for all requirements)
+      Participants who do not submit the required files (full paper, poster)
+      after two reminders will be considered automatically resigned.
+    </li>
+    <li>
+      Participants must use titles and full paper that are in accordance with
+      the category they are participating in. (International participants must
+      use English for all requirements)
     </li>
     <li>
       Participants are required to make an A0-sized poster, bring the product
-      and also the paper/extended abstract (in hard copy) during the judging
-      session.
+      and also the paper/full paper (in hard copy) during the judging session.
     </li>
     <li>
       The awarding of awards to participants will be carried out in accordance
