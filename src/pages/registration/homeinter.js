@@ -84,16 +84,15 @@ function HomeInter() {
                 type="checkbox"
                 id="terms"
                 checked={termsAccepted}
-                disabled={!hasViewedTerms}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
-              <label htmlFor="terms" style={{ color: !hasViewedTerms ? "#999" : "inherit" }}>
+              <label htmlFor="terms">
                 I have read and agree to the{" "}
-                <a href="#" style={{ color: "#2563eb" }} onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
+                <span style={{ color: "#2563eb", textDecoration: "underline", cursor: "pointer" }} onClick={(e) => { e.preventDefault(); handleViewTerms(); }}>
                   Terms & Conditions
-                </a>.
+                </span>.
               </label>
-              {!hasViewedTerms && (
+              {!termsAccepted && (
                 <p style={{ color: "#e74c3c", fontSize: "0.85rem", marginTop: "4px" }}>
                   * Please read and agree to the Terms & Conditions first.
                 </p>
