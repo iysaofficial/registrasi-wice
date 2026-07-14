@@ -10,6 +10,7 @@ function IndonesiaOffline() {
   const maxSchoolChars = 500; // batasan maksimal karakter
   const maxProjectChars = 160; // batasan maksimal karakter
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [categoryPrice, setCategoryPrice] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -45,12 +46,16 @@ function IndonesiaOffline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "World Invention Competition and Exhibition - Offline Competition":
+        setCategoryPrice("Rp. 4.500.000");
         break;
       case "World Invention Competition and Exhibition - Offline Competition + Excursion":
+        setCategoryPrice("");
         break;
       case "World Invention Competition and Exhibition - Offline Competition + FullPack":
+        setCategoryPrice("");
         break;
       default:
+        setCategoryPrice("");
         break;
     }
   };
@@ -115,6 +120,7 @@ function IndonesiaOffline() {
           namaLengkap: selectedMaxNamaLengkap,
           projectTitle: selectedMaxProject,
           category: selectedCategory,
+          categoryPrice: categoryPrice,
           namasekolah: selectedNamaSekolah,
         };
 
@@ -573,6 +579,21 @@ function IndonesiaOffline() {
                   ></textarea>
                   <div className="mt-5" id="form_alerts"></div>
                 </div>
+                {categoryPrice ? (
+                  <div className="input-box">
+                    <label htmlFor="CATEGORY_PRICE" className="form-label ">
+                      Registration Price
+                    </label>
+                    <input
+                      type="text"
+                      id="CATEGORY_PRICE"
+                      name="CATEGORY_PRICE"
+                      className="form-control"
+                      value={categoryPrice}
+                      readOnly
+                    />
+                  </div>
+                ) : null}
               </div>
               {/* DETAIL PROJECT END */}
               {/* DETAIL PROJECT END */}
