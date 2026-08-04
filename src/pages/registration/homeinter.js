@@ -53,21 +53,35 @@ function HomeInter() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a
+            {/* <a
               className="btn btn-action text-center me-lg-5"
               onClick={() =>
                 handleOpenModal("/registration/inter-online", internationalOnlineTerms)
               }
             >
               Online Participant<i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </a> */}
             <a
+              className="btn btn-action text-center me-lg-5"
+              style={{ pointerEvents: "none", opacity: 0.6 }}
+              onClick={(e) => e.preventDefault()}
+            >
+              CLOSE REGIST
+            </a>
+            {/* <a
               className="btn btn-action text-center me-lg-5"
               onClick={() =>
                 handleOpenModal("/registration/inter-offline", internationalOfflineTerms)
               }
             >
               Offline Participant<i className="fa-solid fa-earth-americas"></i>
+            </a> */}
+            <a
+              className="btn btn-action text-center me-lg-5"
+              style={{ pointerEvents: "none", opacity: 0.6 }}
+              onClick={(e) => e.preventDefault()}
+            >
+              CLOSE REGIST
             </a>
           </div>
         </div>

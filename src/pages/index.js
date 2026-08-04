@@ -23,18 +23,36 @@ export default function Home() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <Link href="/registration/homeindo" legacyBehavior>
+            {/* <Link href="/registration/homeindo" legacyBehavior>
               <a
                 className="btn btn-action text-center me-lg-5 m-2"
               >
                 Indonesia Citizen{" "}
                 <i className="fa-solid fa-earth-americas"></i>
               </a>
+            </Link> */}
+            <Link href="/registration/homeindo" legacyBehavior>
+              <a
+                className="btn btn-action text-center me-lg-5 m-2"
+                style={{ pointerEvents: "none", opacity: 0.6 }}
+                onClick={(e) => e.preventDefault()}
+              >
+                CLOSE REGIST
+              </a>
             </Link>
-            <Link href="/registration/homeinter" legacyBehavior>
+            {/* <Link href="/registration/homeinter" legacyBehavior>
               <a className="btn btn-action text-center me-lg-5 m-2">
                 International Citizen{" "}
                 <i className="fa-solid fa-earth-americas"></i>
+              </a>
+            </Link> */}
+            <Link href="/registration/homeinter" legacyBehavior>
+              <a 
+                className="btn btn-action text-center me-lg-5 m-2"
+                style={{ pointerEvents: "none", opacity: 0.6 }}
+                onClick={(e) => e.preventDefault()}
+              >
+                CLOSE REGIST
               </a>
             </Link>
             <br />
